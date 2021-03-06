@@ -1,0 +1,63 @@
+/*Animation Placement*/
+body {
+  position: absolute;
+  bottom: 10px;
+}
+/*--------------------------------------------------------------------------------------------*/
+/* Coin Movement */
+#coin-1,
+#coin-2,
+#coin-3,
+#coin-4,
+#coin-5,
+#coin-6,
+#coin-7,
+#coin-8,
+#coin-9,
+#coin-10,
+#coin-11,
+#coin-12,
+#bottle-1,
+#bottle-2,
+#bottle-3,
+#bottle-4,
+#bottle-5,
+#bottle-6,
+#bottle-7,
+#bottle-8,
+#bottle-9,
+#bottle-10,
+#bottle-11 {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+/*--------------------------------------------------------------------------------------------*/
+/* Spring Movement */
+#spring {
+  animation: SlowUpDown 5s linear infinite;
+  position: absolute;
+  bottom: 0;
+  top: 10;
+}
+
+@keyframes SlowUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(500px);
+  }
+}
